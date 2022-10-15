@@ -1,6 +1,6 @@
-# Course-Assignments-of-Advanced-Visualization
+# Course-Assignments-of-Advanced-Data-Visualization
 
-## Course Assignments of ANLY503(Advanced Visualization) at Georgetown University
+## Course Assignments of ANLY503(Advanced Data Visualization) at Georgetown University
 
 ### Topics
 $\quad$• Static Visualizations: R: ggplot; Python: matplotlib; etc.
