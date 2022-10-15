@@ -1,0 +1,102 @@
+U.S. Population Estimates by Age, Sex, Race, and Hispanic Origin:  1980
+to 1999
+                  (With short-term projection to dates in 2000)
+
+Source: Population Estimates Program, Population Division, U.S. Census
+	Bureau
+Internet Release Date: April 11, 2000
+
+
+The 1990 monthly postcensal national population estimate data files have
+an identical layout.  All records contain 222 characters.  All data fields
+are right-justified.
+
+Location            Type        Data
+
+1-2                 Character   Series
+3-4                 Numeric     Month
+5-8                 Numeric     Year
+9-11                Numeric     Age (years)
+12                  (blank)     (blank)
+13-22               Numeric     Total population
+23-32               Numeric     Total male population
+33-42               Numeric     Total female population
+43-52               Numeric     White male population
+53-62               Numeric     White female population
+63-72               Numeric     Black male population
+73-82               Numeric     Black female population
+83-92               Numeric     American Indian, Eskimo, and Aleut
+                                male population
+93-102              Numeric     American Indian, Eskimo, and Aleut
+                                female population
+103-112             Numeric     Asian and Pacific Islander male
+                                population
+113-122             Numeric     Asian and Pacific Islander female
+                                population
+123-132             Numeric     Hispanic male population
+133-142             Numeric     Hispanic female population
+143-152             Numeric     White, non-Hispanic male
+                                population
+153-162             Numeric     White, non-Hispanic female
+                                population
+163-172             Numeric     Black, non-Hispanic male
+                                population
+173-182             Numeric     Black, non-Hispanic female
+                                population
+183-192             Numeric     American Indian, Eskimo, and Aleut,
+                                non-Hispanic male population
+193-202             Numeric     American Indian, Eskimo, and Aleut,
+                                non-Hispanic female population
+203-212             Numeric     Asian and Pacific Islander, non-
+                                Hispanic male population
+213-222             Numeric     Asian and Pacific Islander, non-
+                                Hispanic female population
+
+Within each file, the records are first sorted by the reference date
+(Month-Year) in chronological order.  For each reference date, the first
+record lists the population counts for all ages combined.  The remaining
+records list the population counts by single year of age in ascending
+order.
+
+
+
+Explanation of Data Fields (ASCII Files)
+
+Series:  Quarterly estimates for April 1, 1980, to April 1, 1990 have a
+series designation of "2I", representing the year of production (1992) and
+the fact that they are intercensal estimates.  Monthly estimates for 
+April 1, 1990 and onward have a series designation "8P", representing the
+year of production (1998) and the fact that they are postcensal estimates.
+
+Month:  Monthly estimates for April 1, 1990 and onward designate the
+months numerically.  A "1" indicates population data for January 1; a "2"
+indicates population data for February 1; and so on.  Quarterly estimates
+for April 1, 1980, to April 1, 1990 designate the first month of each
+quarter numerically.  The monthly reference dates are "1", "4", "7", and
+"10", for the first day of January, April, July, and October,
+respectively.
+
+Year: In post-1990 monthly files, year is identified by four digits.  For
+example, a code of "99" indicates the year 1999. In previous releases,
+year has been represented by the last two digits.  In the quarterly files
+for the 1980s, year continues to be represented by two digits.
+
+Age group:  The total population code is 999, which is the first record
+for each year.  This is followed by 0 to 99, which are individual ages,
+and 100, which is the population 100 years of age and over (centenarians).
+
+Sex, race and Hispanic origin: Population data are shown for a total of 21
+categories.  The first category shows the total population of the age
+group.  The remaining 20 categories list the male and female populations,
+respectively, for the following racial and/or Hispanic origin categories:
+
+     Total (All races)
+     White
+     Black
+     American Indian, Eskimo, and Aleut
+     Asian and Pacific Islander
+     Hispanic origin (of any race)
+     Non-Hispanic White
+     Non-Hispanic Black
+     Non-Hispanic American Indian, Eskimo, and Aleut
+     Non-Hispanic Asian and Pacific Islander.

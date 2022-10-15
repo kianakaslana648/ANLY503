@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "axis": {"labelFontSize": 16, "titleFontSize": 20}, "title": {"fontSize": 24}}, "data": {"name": "data-671cb7163f4e9ac058e021b6d8fcfdf1"}, "mark": "bar", "encoding": {"x": {"field": "Type", "type": "nominal"}, "y": {"field": "Percentage", "type": "quantitative"}}, "height": 400, "selection": {"selector001": {"type": "single", "fields": ["Household"], "bind": {"input": "select", "options": ["Household1", "Household2", "Household3"], "name": "Household"}}}, "title": "Percentages for Different Power Use in 3 Households", "transform": [{"filter": {"selection": "selector001"}}], "width": 400, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-671cb7163f4e9ac058e021b6d8fcfdf1": [{"Type": "Fridge", "Percentage": 0.09997541919640812, "Household": "Household1"}, {"Type": "Kitchen Appliances", "Percentage": 0.03487850201559699, "Household": "Household1"}, {"Type": "Lamp", "Percentage": 0.03448165984068982, "Household": "Household1"}, {"Type": "Stereo and Laptop", "Percentage": 0.03960940916045929, "Household": "Household1"}, {"Type": "Freezer", "Percentage": 0.616238111728551, "Household": "Household1"}, {"Type": "Tablet", "Percentage": 0.0046352163870315155, "Household": "Household1"}, {"Type": "Entertainment", "Percentage": 0.11161776318163058, "Household": "Household1"}, {"Type": "Microwave", "Percentage": 0.05856391848963263, "Household": "Household1"}, {"Type": "Tablet", "Percentage": 0.037664023180124115, "Household": "Household2"}, {"Type": "Coffee Machine", "Percentage": 0.04527319587018546, "Household": "Household2"}, {"Type": "Fountain", "Percentage": 0.03293144741812142, "Household": "Household2"}, {"Type": "Microwave", "Percentage": 0.07213778744155783, "Household": "Household2"}, {"Type": "Fridge", "Percentage": 0.3697920365296983, "Household": "Household2"}, {"Type": "Entertainment", "Percentage": 0.17657083297066797, "Household": "Household2"}, {"Type": "PC", "Percentage": 0.2651703155207045, "Household": "Household2"}, {"Type": "Kettle", "Percentage": 0.0004603610689403009, "Household": "Household2"}, {"Type": "Lamp", "Percentage": 0.004179185987739053, "Household": "Household3"}, {"Type": "Laptop", "Percentage": 0.12091544825803319, "Household": "Household3"}, {"Type": "Router", "Percentage": 0.17393704743848706, "Household": "Household3"}, {"Type": "Coffee Machine", "Percentage": 0.06698842745916946, "Household": "Household3"}, {"Type": "Entertainment", "Percentage": 0.4163873198319824, "Household": "Household3"}, {"Type": "Fridge", "Percentage": 0.17933761815899768, "Household": "Household3"}, {"Type": "Kettle", "Percentage": 0.038254952865591094, "Household": "Household3"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

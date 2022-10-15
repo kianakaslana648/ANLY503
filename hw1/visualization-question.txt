@@ -1,0 +1,12 @@
+Is there any difference of min balances and max balances among accounts with
+different number of customers?
+
+We can use boxplot to clearly show the overall distribution since the range of numbers
+of customers is 0-2.
+
+Result: There is little difference between one-customer account and two-customer account.
+But there is strong difference between zero-customer account and the other two kinds.
+
+I think the accounts with zero-customer are the special accounts opened for corporations or some
+institutions. Thus, the behavior of the balance is quite different.
+
