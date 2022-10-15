@@ -16,6 +16,6 @@ $\quad$• Python: seaborn, matplotlib, plotly, altair, datashader, etc.
 
 $\quad$• R: ggplot, shiny, leaflet, networkD3, etc.  
 
-$\quad$• d3.js  
+$\quad$• D3.js  
 
 $\quad$• Tableau
