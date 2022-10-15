@@ -5,7 +5,7 @@
 ### Topics
 $\quad$• Static Visualizations: R: ggplot; Python: matplotlib; etc.
 
-$\quad$• Specialized Visualizations: Maps(Geospatial), Graphs & Networks, Time Series, Textual Visualization, Shader for Big Data.
+$\quad$• Specialized Visualizations: Maps(Geospatial), Graphs & Networks, Time Series, Text, Shader for Big Data.
 
 $\quad$• Dynamic Visualizations: R: shiny; Python: altair, plotly, dash; d3.js.
 
